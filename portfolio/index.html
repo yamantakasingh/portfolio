@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="style.css">
+    <title>Portfolio Website</title>
+</head>
+<body>
+   
+    <header>
+        <nav>
+        <div class="nav-container">
+            <div class="logo" data-aos="zoom-in" data-aos-duration="1500">
+                Mrityunjay <span>Singh</span>
+            </div>
+            <div class="nav-links">
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="100" ><a href="#">Home</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200" ><a href="#">Services</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300" ><a href="#">Skills</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="400" ><a href="#">Contact</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="500" ><a href="#">About</a></div>
+            </div>
+        </div>
+
+        <i class="fa-solid fa-bars menuIcon" onclick="openMenu()"></i>
+        <div class="dropdown">
+            <div class="links">
+                <a  href="#">Home</a>
+                <a  href="#">Services</a>
+                <a  href="#">Skills</a>
+                <a  href="#">Contact</a>
+                <a  href="#">About</a>
+                <i class="fa-solid fa-xmark cancel" onclick="closeMenu()"></i>
+            </div>
+        </div>
+        </nav>
+    </header>
+    
+    <main>
+        
+        <section class="hero-section">
+            <div class="content" data-aos="fade-left" data-aos-duration="1500" data-aos-delay="700">
+                <h1>Hey! I'm <span>Mrityunjay</span></h1>
+                <div data-aos="fade-right" data-aos-duration="1500" data-aos-delay="900" class="typewriter">I'm a <span class="typewriter-text"></span>|</div>
+                <p data-aos="flip-down" data-aos-duration="1500" data-aos-delay="1100">Skilled in HTML, CSS, and JavaScript. I’m passionate about learning, contributing to open-source, and taking on new challenges. Always striving for creativity and precision, I'm open to internships and opportunities to collaborate and grow.</p>
+                <div class="social-links">
+                    <a href="https://github.com/yamantakasingh" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1300"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/mrityunjay-singh-5b356b274/" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1500"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                
+                <div class="btn" data-aos="zoom-out" data-aos-duration="1500" data-aos-delay="1700">
+                    <button href="#">Download CV</button>
+                </div>
+            </div>
+
+            <div class="image" data-aos="zoom-in" data-aos-duration="3000" data-aos-delay="100">
+                <img src="mainly.png" alt="Potrait of Mrityunjay Singh">
+            </div>
+
+        </section>    
+
+    </main>
+    
+    <footer></footer>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init(
+        {
+            offset: 0
+        }
+      );
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>
